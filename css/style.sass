@@ -1,0 +1,59 @@
+*
+    box-sizing: border-box 
+body
+    margin: 0
+    padding: 0
+    font-family: 'Roboto', sans-serif
+h1, h2
+    margin: 0
+    padding: 0
+.contacts
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 100vh
+    padding: 55px 0
+    &-form
+        display: flex
+        align-items: center
+        flex-direction: column    
+        width: 100%
+        background-image: linear-gradient(to top, #17d8d6 0%, #53e3a6 100%)
+        padding: 55px 0
+        &__title 
+            font
+                weight: 300
+                size: 30px
+            color: #fff
+            letter-spacing: 1.5px
+            padding: 0 0 25px 0
+        &__input
+            font
+                weight: 300
+                size: 16px
+            color: #fff
+            letter-spacing: 1.5px
+            text-align: center
+            margin: 5px 0
+            max-width: 270px
+            width: 100%
+            padding: 17px 30px
+            border-radius: 3px
+            border: 1px solid #ffffff
+            background: rgba(255, 255, 255, 0.4)
+            transition: 0.5s
+        &__input:focus
+            outline: none
+            max-width: 300px
+            background: #ffffff
+            color: #17d8d6
+        &__input::placeholder
+            color: #ffffff
+            opacity: 1
+        &__submit
+            background-color: #ffffff
+            color: #17d8d6
+            margin: 10px 0
+            cursor: pointer
+        &__submit:focus
+            max-width: 270px
